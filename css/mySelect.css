@@ -1,0 +1,79 @@
+.cajaselect {
+	width: 70%;
+	height: 40px;
+	background: none repeat scroll 0 0 rgb(254,167,1);
+	border-radius: 5px 5px 0 0;
+	cursor: pointer;
+	margin-top: 20px;
+	padding: 5px 10px;
+	position: relative;
+	z-index: 1;
+	visibility: hidden;
+}
+
+ul.listaselect {
+	background: none repeat scroll 0 0 #fff;
+	overflow-y: scroll;
+	border: 1px solid #dedede;
+	display: none;
+	left: -1px;
+	margin-left: 0;
+	margin-top: 49px;
+	padding-left: 0;
+	position: absolute;
+	text-indent: 15px;
+	top: 0;
+	width: 100%;
+	height: 30vh;
+}
+ul.listaselect li {
+	width: 90%;
+	border-bottom: 1px solid #efefef;
+	cursor: pointer;
+	display: block;line-height: 100%;
+	list-style: outside none none;
+	margin: 0;
+	padding: 1.1em 0.3em;
+}
+ul.listaselect li a {
+	color: #333;
+	text-decoration: none;
+}
+
+ul.listaselect li:hover {
+	background-color: #999797;
+	color: white;
+}
+
+ul.SelectProductos li:last-child {
+	border-bottom: medium none;
+}
+.seleccionado {
+	color: white;
+	display: block;
+	font-weight: 700;
+	line-height: 3;
+	text-indent: 10px;
+}
+.trianguloinf {
+	margin-top: 2%;
+	border-left: 9px solid rgba(0, 0, 0, 0);
+	border-right: 9px solid rgba(0, 0, 0, 0);
+	border-top: 13px solid #cfecfc;
+	height: 0;
+	position: absolute;
+	right: 10px;
+	top: 17px;
+	width: 0;
+}
+.triangulosup {
+	border-bottom: 13px solid #cfecfc;
+	border-left: 9px solid rgba(0, 0, 0, 0);
+	border-right: 9px solid rgba(0, 0, 0, 0);
+	height: 0;
+	position: absolute;
+	right: 10px;
+	top: 17px;
+	width: 0;
+}
+
