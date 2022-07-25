@@ -1,0 +1,279 @@
+body{
+	margin: 0;
+}
+
+#app{
+	position:relative;
+}
+
+#mapa{
+	width: 100%;
+	height: 100vh;
+	position: absolute;
+	z-index: 1;
+}
+
+@keyframes expandir{
+	0% {width: 0%;}
+	50% {width: 26%;}
+	100% {width: 23%;}
+}
+
+#menus{
+	position: absolute;
+	background: rgba(0, 0, 0, 0);
+	width: 100%;
+	padding: 0px;
+	margin: 0px;
+	display: flex;
+	align-items: flex-end;
+}
+
+#menu{
+	width: 0%;
+	height: 100vh;
+	padding: 0px;
+	background: rgba(0,0,0,0.9);
+	animation-name: expandir;
+	animation-fill-mode: forwards;
+	animation-delay: 1.5s;
+	animation-duration: 2s;
+	z-index: 2;
+}
+
+#menu-2{
+	height: 100vh;
+	width: 23%;
+	border-left: 1px solid white;
+	background-color: rgba(0,0,0,0.8);
+	animation-name: margen-menu2;
+	animation-fill-mode: forwards;
+	animation-delay: 1.5s;
+	animation-duration: 2s;
+	display: none;
+	z-index: 2;
+}
+
+
+#graficos{
+	width: 100%;
+	height: 100vh;
+	position: absolute;
+	background: rgba(0,0,0,0.9);
+	display: none;
+	justify-content: center;
+	align-items: center;
+	z-index: 3;
+}
+
+#hoja-graficos{
+	width: 70%;
+	height: 80%;
+	background: rgb(255,255,255);
+	box-shadow: 0 0 20px rgb(0, 0, 0);
+	border-radius: 10px;
+	border: 1px solid rgba(0,0,0,0.8);
+}
+
+.mis-botones-graficos{
+	position: absolute;
+	bottom: 17vh;
+	left: 0%;
+	display: flex;
+	justify-content: center;
+	width: 100%;
+}
+
+.btn-grafico{
+	margin-left: 1%;
+}
+
+#zoom{
+	position: absolute;
+	z-index: 2;
+	right: 2px;
+	top: 5px;
+}
+
+
+ul{
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+li{
+	width: 100%;
+}
+
+.logo{
+	margin-top: 10vh;
+	margin-bottom: 100px;
+	margin-left: 7%;
+	width: 90%;
+	height: 90px;
+	-moz-user-select: none;
+	pointer-events: none;
+}
+
+.icono{
+	width: 13%;
+	height: 40px;
+	margin-right: 15px;
+	-moz-user-select: none;
+	pointer-events: none;
+}
+
+.seccion{
+	display: flex;
+	align-items: flex-end;
+	padding-left: 10%;
+	padding-top: 5%;
+	padding-bottom: 5%;
+}
+
+.texto-encabezado{
+	margin-left: 3%;
+	width: 55%;
+	height: 42px;
+	-moz-user-select: none;
+	pointer-events: none;
+}
+
+.mi-boton-zoom{
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	font-size: 20px;
+	font-weight: bold;
+	color:  white;
+	background-color: rgb(254, 167, 1);
+	margin: 2%;
+}
+
+.buscar-calle{
+	margin-left: 5%;
+	width: 80%;
+	height: 40px;
+	margin-top: 65px;
+	border-radius: 25px;
+	border: 0px solid;
+	box-shadow: 0 0 5px rgb(240,240,244);
+	padding-left: 8%;
+	font-family: "Arial Narrow", Arial, sans-serif;
+	font-size: 19px;
+}
+
+.buscar-calle:focus {
+    outline: none !important;
+    border: 2px solid rgb(254, 167, 1);
+    box-shadow: 0 0 10px rgb(254, 167, 1);
+  }
+
+.lista-calles{
+	margin-top: 6vh;
+	overflow-y: scroll;
+	overflow-x: hidden;
+	height: 76vh;
+}
+
+.seccion-calles{
+	color: white;
+	padding-left: 10%;
+	padding-top: 6%;
+	padding-bottom: 6%;
+	font-family: "Arial Narrow", Arial, sans-serif;
+	font-size: 17px;
+	-moz-user-select: none;
+}
+
+.seccion-calles:hover{
+	background-color: rgba(254, 155, 1, 0.6);
+	cursor: pointer;
+}
+
+.pinta{background-color: rgba(0,0,0,0.6);}
+
+.seleccionado-3{
+	padding-top: 100px;
+	padding-left: 8%;
+}
+
+.apartado-histograma{
+	width: 90%;
+	height: 190px;
+	position:  relative;
+	margin-bottom: 30px;
+	background-color: rgba(0,0,0,0.8);
+	box-shadow: 0 0 15px rgb(0, 0, 0);
+}
+
+.apartado-histograma:hover{
+	cursor: pointer;
+}
+
+.img-histograma{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	z-index: 1;
+	position:absolute;
+	-moz-user-select: none;
+  	-webkit-transition: opacity 1s ease-in-out;
+ 	-moz-transition: opacity 1s ease-in-out;
+ 	-o-transition: opacity 1s ease-in-out;
+ 	transition: opacity 1s ease-in-out;
+}
+
+.img-histograma:hover{
+	opacity: 0;
+}
+
+.texto-histograma{
+	color:  white;
+	font-family: "Arial Narrow", Arial, sans-serif;
+	width: 100%;
+	height: 20%;
+	font-size: 89%;
+	font-weight: bold;
+	position: absolute;
+	background-color: rgba(254, 147, 1, 0.8);
+	bottom: 0px;
+	display: flex;
+	justify-content:center;
+	align-items: center;
+	-moz-user-select: none;
+	z-index: 2;
+}
+
+.control-fecha-histograma{
+	display: flex;
+	justify-content: center;
+	margin-top: 10px;
+	width: 100%;
+	height: 50px;
+}
+
+.texto-fecha{
+	font-family: "Arial Narrow", Arial, sans-serif;
+	font-size: 80px;
+	margin-left: 3%;
+	margin-right: 3%;
+	-moz-user-select: none;
+}
+
+.btn-fecha{
+	margin-top: 35px;
+	height: 50px;
+	-moz-user-select: none;
+}
+
+#mi-grafico{
+	position: relative;
+	width: 75% !important;
+	height: 45vh !important;
+	margin-left: 12.5%;
+	margin-top: 60px;
+	display: flex;
+	justify-content: center;
+}
