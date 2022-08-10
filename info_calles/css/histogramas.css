@@ -1,0 +1,44 @@
+.pantalla-histogramas{
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.7);
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 3;
+    display: flex;
+    align-items: center;
+    overflow-y: hidden;
+}
+
+.ventana-histogramas{
+    height: 500px;
+    background-color: rgb(20, 20, 20);
+    box-shadow: -5px 3px 5px black;
+    margin: auto;
+    padding-bottom: 1%;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.cerrar{
+    padding-left: 10px;
+    padding-right: 10px;
+    font-weight: bold;
+}
+
+.control-fecha-histograma{
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-size: 40px;
+}
+
+.texto-fecha{
+    margin-left: 20px;
+    margin-right: 20px;
+    color: white;
+    font-size: 40px;
+}

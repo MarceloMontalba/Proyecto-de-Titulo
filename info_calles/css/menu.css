@@ -1,0 +1,72 @@
+.barra-menu{
+    width: 20%;
+    height: 100vh;
+    padding: 0;
+    background-color: rgba(0,0,0,0.8);
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 2;
+    display: table;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none; 
+}
+
+@font-face{
+    font-family: miFondo1;
+    src: url(fondos/BebasNeue-Regular.ttf);
+}
+
+.barra-menu a{
+    display: block;
+    padding: 10px;
+    padding-left: 60px;
+    padding-right: 10px;
+    margin-top: auto;
+    margin-bottom: auto;
+    text-decoration: none;
+    font-family: miFondo1;
+    font-size: 21px;
+    color: white !important;
+    background-repeat: no-repeat;
+    background-position: 15px;
+    background-size: 32px;
+}
+
+@keyframes seleccionado {
+    to {
+        font-size: 23px;
+        background-size: 36px;
+    }
+}
+
+.barra-menu a:hover{
+    background-color: rgba(186, 95, 9, 0.7);
+    cursor: pointer;
+    animation-name: seleccionado;
+    animation-duration: 0.3s;
+    animation-fill-mode: forwards;
+}
+
+.barra-menu a:active{
+    background-color: rgba(186, 95, 9,0.7);
+}
+
+.opciones{
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.modulo1{
+    background-image: url(../img/trafico.png);
+}
+
+.modulo2{
+    background-image: url(../img/velocidad.png);
+}
+
+.modulo3{
+    background-image: url(../img/peligro.png);
+}

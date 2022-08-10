@@ -1,0 +1,52 @@
+.texto-mes{
+    color: white;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.btn-secundario:focus{
+    color: white !important;
+}
+
+.btn-secundario:hover{
+    color: white !important;
+}
+
+.center{
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.contenido-histogramas{
+    height: 310px;
+    overflow-y: scroll;
+}
+
+.btn-regresar{
+    background-color: rgba(0,0,0,0.0);
+    border-color: rgb(117, 45, 2);
+    color: rgb(117, 45, 2);
+}
+
+.btn-regresar:hover{
+    background-color: rgb(117, 45, 2);
+    color: white;
+}
+
+.btn-regresar:focus{
+    box-shadow:0 0 0 .2rem rgba(117, 45, 2, 0.6) !important;
+}
+
+/*Barra Scroll*/
+.contenido-histogramas::-webkit-scrollbar{
+    width: 8px;
+    background-color: rgb(54, 53, 52);
+    border-top-left-radius: 17px;
+    border-bottom-right-radius: 17px;
+}
+
+.contenido-histogramas::-webkit-scrollbar-thumb{
+    background-color: rgb(117, 45, 2);
+    border-top-left-radius: 17px;
+    border-bottom-right-radius: 17px;
+}
