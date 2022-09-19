@@ -1,0 +1,79 @@
+body, #modal-histogramas-calles{
+    display: flex;
+}
+
+@font-face{
+    font-family: PTSansNarrowNormal;
+    src: url(fondos/PTSansNarrow-Regular.ttf);
+}
+
+@font-face{
+    font-family: GirassolNormal;
+    src: url(fondos/Girassol-Regular.ttf);
+}
+
+#modal-histogramas-calles{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+    transition: all 500ms ease;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 4;
+}
+
+#modal-histogramas-calles .contenedor{
+    margin: auto;
+    background: #303030;
+    color: #fff;
+    box-shadow: 1px 7px 25px rgba(0, 0, 0, 0.6);
+    transition: all 500ms ease;
+    position: relative;
+}
+
+@media all and (max-width: 700px){
+    #modal-histogramas-calles .contenedor{
+        width: 490px;
+        height: 440px;
+    }
+}
+
+@media all and (min-width: 700px){
+    #modal-histogramas-calles .contenedor{
+        width: 700px;
+        height: 530px;
+    }
+}
+
+#modal-histogramas-calles .contenedor header{
+    padding: 20px;
+    background: rgb(145, 67, 6);
+    color: #fff;
+    font-family: GirassolNormal;
+    font-size: 23px;
+}
+
+#modal-histogramas-calles .contenedor .cerrar-ventana{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+#modal-histogramas-calles .contenido{
+    font-family: PTSansNarrowNormal;
+}
+
+#modal-calles .contenido-histogramas-calles::-webkit-scrollbar{
+    background: #474545;
+    border-radius: 5px;
+    width: 8px;
+    box-shadow: 3px 3px 3px black;
+}
+
+#modal-calles .contenido-histogramas-calles::-webkit-scrollbar-thumb{
+    background: #a64b05;
+    border-radius: 5px;
+}

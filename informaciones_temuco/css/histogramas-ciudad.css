@@ -1,0 +1,67 @@
+body, #modal-ciudad{
+    display: flex;
+}
+
+@font-face{
+    font-family: PTSansNarrowNormal;
+    src: url(fondos/PTSansNarrow-Regular.ttf);
+}
+
+@font-face{
+    font-family: GirassolNormal;
+    src: url(fondos/Girassol-Regular.ttf);
+}
+
+#modal-ciudad{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+    transition: all 300ms ease;
+    z-index: 3;
+    visibility: hidden;
+    opacity: 0;
+}
+
+#modal-ciudad .contenedor{
+    margin: auto;
+    background: rgb(31, 27, 27);
+    color: #fff;
+    box-shadow: 1px 7px 25px rgba(0, 0, 0, 0.6);
+    transition: all 300ms ease;
+    position: relative;
+}
+
+@media all and (max-width: 700px){
+    #modal-ciudad .contenedor{
+        width: 490px;
+        height: 420px;
+    }
+}
+
+@media all and (min-width: 700px){
+    #modal-ciudad .contenedor{
+        width: 700px;
+        height: 510px;
+    }
+}
+
+#modal-ciudad .contenedor header{
+    padding: 20px;
+    background: rgb(145, 67, 6);
+    color: #fff;
+    font-family: GirassolNormal;
+    font-size: 23px;
+}
+
+#modal-ciudad .contenido{
+    font-family: PTSansNarrowNormal;
+}
+
+#modal-ciudad .contenedor .cerrar-ventana{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}

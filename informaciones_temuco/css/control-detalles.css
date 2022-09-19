@@ -1,0 +1,68 @@
+.control-detalles{
+    width: 260px;
+    background-color: rgb(31, 27, 27);
+    position: absolute;
+    right: 40px;
+    bottom: 20px;
+    z-index: 2;
+}
+
+@font-face{
+    font-family: PTSansNarrowNormal;
+    src: url(fondos/PTSansNarrow-Regular.ttf);
+}
+
+@font-face{
+    font-family: GirassolNormal;
+    src: url(fondos/Girassol-Regular.ttf);
+}
+
+.control-detalles label{
+    color: rgba(255,255,255,0.9);
+    font-family: PTSansNarrowNormal;
+}
+
+.borde-control{
+    width: 100%;
+    height: 3px;
+    background-color: rgba(0,0,0,0.0);
+}
+
+.control-titulo{
+    background-color: rgb(145, 67, 6);
+    padding:5px;
+    border-top: 10px;
+}
+
+.control-titulo label{
+    font-family: GirassolNormal!important;
+    font-size: 20px;
+}
+
+.control-titulo:hover{
+    cursor: pointer;
+}
+
+.control-subtitulo{
+    font-size: 17px;
+    background-color: rgb(18, 16, 16);
+}
+
+.control-subtitulo:hover{
+    cursor: pointer;
+}
+
+.mi-control{
+    background-color: rgba(0,0,0,0.4) !important;
+    color: rgba(255,255,255,0.8) !important;
+    font-family: PTSansNarrowNormal;
+    font-size: 13px !important;
+}
+
+.mi-control:hover, .opciones:hover{
+    cursor: pointer !important;
+}
+
+.btn-control{
+    background-color: rgb(145, 67, 6) !important;
+}

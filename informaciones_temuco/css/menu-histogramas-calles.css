@@ -1,0 +1,93 @@
+body, #modal-calles{
+    display: flex;
+}
+
+@font-face{
+    font-family: PTSansNarrowNormal;
+    src: url(fondos/PTSansNarrow-Regular.ttf);
+}
+
+@font-face{
+    font-family: GirassolNormal;
+    src: url(fondos/Girassol-Regular.ttf);
+}
+
+#modal-calles{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+    transition: all 300ms ease;
+    z-index: 3;
+    visibility: hidden;
+    opacity: 0;
+}
+
+#modal-calles .contenedor{
+    width: 400px;
+    height: 530px;
+    margin: auto;
+    background: #303030;
+    color: #fff;
+    box-shadow: 1px 7px 25px rgba(0, 0, 0, 0.6);
+    transition: all 300ms ease;
+    position: relative;
+}
+
+#modal-calles .contenedor header{
+    padding: 20px;
+    background: rgb(145, 67, 6);
+    color: #fff;
+    font-family: GirassolNormal;
+    font-size: 23px;
+}
+
+#modal-calles .contenedor button{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+#modal-calles .contenido{
+    font-family: PTSansNarrowNormal;
+    overflow-y: scroll;
+    height: 390px;
+}
+
+#modal-calles .contenido td{
+    padding: 15px;
+}
+
+#modal-calles .contenido tr:nth-child(odd) {
+	background: #242222;
+}
+
+#modal-calles .contenido tr:nth-child(even) {
+	background: #403b3b;
+}
+
+#modal-calles .contenido tr:hover{
+    cursor: pointer;
+    background: #8f3704;
+}
+
+#modal-calles .contenido::-webkit-scrollbar{
+    background: #474545;
+    border-radius: 5px;
+    width: 8px;
+    box-shadow: 3px 3px 3px black;
+}
+
+#modal-calles .contenido::-webkit-scrollbar-thumb{
+    background: #a64b05;
+    border-radius: 5px;
+}
+
+#modal-calles .mi-input{
+    background-color: rgba(0,0,0,0.4) !important;
+    color: rgba(255,255,255,0.8) !important;
+    font-family: PTSansNarrowNormal;
+    font-size: 15px !important;
+}
